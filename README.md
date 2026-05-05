@@ -1,4 +1,4 @@
-# 📚 Trabajo Práctico #1
+# Trabajo Práctico #1
 
 <p align="center">
   <img src="https://img.shields.io/badge/Diplomatura-IA-blue?style=for-the-badge" alt="Diplomatura en IA">
@@ -9,7 +9,7 @@
 
 ---
 
-## 📋 Rótulo del Proyecto
+## Rótulo del Proyecto
 
 | Campo               | Valor                          |
 |---------------------|--------------------------------|
@@ -21,17 +21,17 @@
 
 ---
 
-## 🚀 Descripción del Proyecto
+## Descripción del Proyecto
 
 <!-- Escribe aquí una breve descripción de tu trabajo práctico. -->
 > Este proyecto consiste en...
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - [Lenguaje / Framework 1]
 - [Lenguaje / Framework 2]
 
-## 📦 Instalación y uso
+## Instalación y uso
 
 ```bash
 # Comandos para instalar dependencias y ejecutar el proyecto
