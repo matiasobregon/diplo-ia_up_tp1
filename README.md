@@ -1,10 +1,10 @@
 # Trabajo Práctico #1
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Diplomatura-IA-blue?style=for-the-badge" alt="Diplomatura en IA">
-  <img src="https://img.shields.io/badge/Año-2026-green?style=for-the-badge" alt="Año 2026">
-  <img src="https://img.shields.io/badge/Universidad-Universidad%20de%20Palermo-purple?style=for-the-badge" alt="Universidad de Palermo">
-  <img src="https://img.shields.io/badge/Autor-Matux-orange?style=for-the-badge" alt="Autor: Matux">
+  <img src="https://img.shields.io/badge/Diplomatura-IA-blue?style=flat" alt="Diplomatura en IA">
+  <img src="https://img.shields.io/badge/Año-2026-green?style=flat" alt="Año 2026">
+  <img src="https://img.shields.io/badge/Universidad-Universidad%20de%20Palermo-purple?style=flat" alt="Universidad de Palermo">
+  <img src="https://img.shields.io/badge/Autor-Matux-orange?style=flat" alt="Autor: Matías Obregón">
 </p>
 
 ---
