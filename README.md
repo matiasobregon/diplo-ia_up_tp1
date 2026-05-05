@@ -10,14 +10,13 @@
 # Trabajo Práctico #1
 
 ## Datos del proyecto
-
-| Campo               | Valor                          |
-|---------------------|--------------------------------|
-| **Carrera**         | Diplomatura en IA              |
-| **Año**             | 2026                           |
-| **Universidad**     | Universidad de Palermo         |
-| **Autor**           | Matux                          |
-| **Nombre del Proyecto** | Trabajo Práctico #1        |
+```text
+Proyecto: Trabajo Práctico #1
+Carrera: Diplomatura en IA
+Año: 2026
+Universidad: Universidad de Palermo
+Autor: Matias Obregon
+```
 
 ## Descripción del Proyecto
 
@@ -31,52 +30,6 @@ Para ejecutar este cuaderno sin inconvenientes, necesitarás:
 - **Python** 3.9 o superior
 - **Jupyter Notebook** o **JupyterLab**
 - Opcional: **Visual Studio Code** con la extensión de Jupyter
-
-## Instalación y Ejecución
-
-Sigue estos pasos para ejecutar el proyecto en tu máquina local:
-
-### 1. Clonar el repositorio
-```bash
-git clone https://github.com/tu-usuario/trabajo-practico-1.git
-cd trabajo-practico-1
-```
-
-### 2. Crear un entorno virtual (recomendado)
-```bash
-
-python -m venv venv
-source venv/bin/activate  # En Windows: venv\Scripts\activate
-```
-
-### 3. Instalar dependencias
-```bash
-
-pip install -r requirements.txt
-```
-
-### 4. Iniciar Jupyter
-```bash
-
-jupyter notebook
-```
-
-### 5. Abrir y ejecutar el cuaderno
-
-Abrir el archivo Trabajo_Practico_1.ipynb y ejecutar las celdas en orden secuencial.
-#### 📦 Dependencias Principales
-
-    numpy
-
-    pandas
-
-    matplotlib
-
-    scikit-learn
-
-    jupyter
-
-(La lista completa con versiones exactas se encuentra en requirements.txt)
 
 ### Estructura del Proyecto4. Iniciar Jupyter
 ```text
