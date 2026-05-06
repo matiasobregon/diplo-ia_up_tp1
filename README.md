@@ -21,10 +21,20 @@ Autor: Matias Obregon
 ## Descripción del Proyecto
 
 <!-- Completa con tu descripción -->
+### Objetivo
 > El objetivo del presente trabajo es el de desarrollar un análisis exploratorio de datos (EDA) a partir de un dataset de libre elección.
 > Se espera que, mediante el tratamiento, limpieza y visualización de los datos, se puedan responder un conjunto de hipótesis previamente definidas y extraer conclusiones relevantes.
 
+### Contexto del dataset
+
+### Diccionario de datos
+
+### Metodología aplicada
+
 ## Requisitos Previos
+
+### Conclusiones y hallazgos relevantes
+
 
 Para ejecutar este cuaderno sin inconvenientes, necesitarás:
 
@@ -40,6 +50,8 @@ Para ejecutar este cuaderno sin inconvenientes, necesitarás:
 ├── LICENSE      # Archivo de licencia
 └── README.md    # Este archivo
 ```
+
+
 
 ### Contribuciones
 
