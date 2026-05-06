@@ -21,7 +21,8 @@ Autor: Matias Obregon
 ## Descripción del Proyecto
 
 <!-- Completa con tu descripción -->
-> Este trabajo práctico consiste en ... (breve descripción del problema que resuelves, el enfoque de IA utilizado y los resultados esperados).
+> El objetivo del presente trabajo es el de desarrollar un análisis exploratorio de datos (EDA) a partir de un dataset de libre elección.
+> Se espera que, mediante el tratamiento, limpieza y visualización de los datos, se puedan responder un conjunto de hipótesis previamente definidas y extraer conclusiones relevantes.
 
 ## Requisitos Previos
 
