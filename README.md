@@ -20,20 +20,25 @@ Autor: Matias Obregon
 
 ## Descripción del Proyecto
 
-<!-- Completa con tu descripción -->
 ### Objetivo
-> El objetivo del presente trabajo es el de desarrollar un análisis exploratorio de datos (EDA) a partir de un dataset de libre elección.
-> Se espera que, mediante el tratamiento, limpieza y visualización de los datos, se puedan responder un conjunto de hipótesis previamente definidas y extraer conclusiones relevantes.
+El objetivo del presente trabajo es el de desarrollar un análisis exploratorio de datos (EDA) a partir de un dataset de libre elección.
+Se espera que, mediante el tratamiento, limpieza y visualización de los datos, se puedan responder un conjunto de hipótesis previamente definidas y extraer conclusiones relevantes.
 
 ### Contexto del dataset
+lorem ipsum
 
 ### Diccionario de datos
+lorem ipsum
 
 ### Metodología aplicada
+lorem ipsum
+
+### Conclusiones y hallazgos relevantes
+lorem ipsum
 
 ## Requisitos Previos
 
-### Conclusiones y hallazgos relevantes
+
 
 
 Para ejecutar este cuaderno sin inconvenientes, necesitarás:
@@ -42,7 +47,7 @@ Para ejecutar este cuaderno sin inconvenientes, necesitarás:
 - **Jupyter Notebook** o **JupyterLab**
 - Opcional: **Visual Studio Code** con la extensión de Jupyter
 
-### Estructura del Proyecto4. Iniciar Jupyter
+### Estructura del Proyecto
 ```text
 /
 ├── tp1.ipynb    # Cuaderno principal
