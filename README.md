@@ -34,11 +34,10 @@ Para ejecutar este cuaderno sin inconvenientes, necesitarás:
 ### Estructura del Proyecto4. Iniciar Jupyter
 ```text
 /
-├── Trabajo_Practico_1.ipynb    # Cuaderno principal
-├── requirements.txt            # Dependencias del proyecto
-├── data/                       # (Opcional) Datos utilizados
-├── images/                     # (Opcional) Imágenes generadas
-└── README.md                   # Este archivo
+├── tp1.ipynb    # Cuaderno principal
+├── data/        # (Opcional) Datos utilizados
+├── LICENSE      # Archivo de licencia
+└── README.md    # Este archivo
 ```
 
 ### Contribuciones
