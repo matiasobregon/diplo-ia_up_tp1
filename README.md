@@ -7,9 +7,8 @@
   <img src="https://img.shields.io/badge/Python-3.9%2B-blue?style=flat&logo=python&logoColor=white" alt="Python 3.9+">
 </p>
 
-# Trabajo Práctico #1
+# Proyecto: Trabajo Práctico #1
 
-## Datos del proyecto
 ```text
 Proyecto: Trabajo Práctico #1
 Carrera: Diplomatura en IA
@@ -18,17 +17,89 @@ Universidad: Universidad de Palermo
 Autor: Matias Obregon
 ```
 
-## Descripción del Proyecto
-
-### Objetivo
+## Objetivo
 El objetivo del presente trabajo es el de desarrollar un análisis exploratorio de datos (EDA) a partir de un dataset de libre elección.
 Se espera que, mediante el tratamiento, limpieza y visualización de los datos, se puedan responder un conjunto de hipótesis previamente definidas y extraer conclusiones relevantes.
 
-### Contexto del dataset
-lorem ipsum
+## Acerca del Dataset
+Nombre del Dataset: Uber Ride Analytics Dataset 2024
 
-### Diccionario de datos
-lorem ipsum
+### Contexto
+Este dataset contiene información detallada de operaciones de Uber durante el año 2024.
+
+Incluye datos como:
+
+- Fecha y Hora de cada reserva
+- Estado del viaje (realizado, cancelado, interrumpuido)
+- Tipo de vehículo que hizo el viaje
+- Valoraciones del conductor y del pasajero
+- Valor del viaje
+
+### Información que puede ser interesante obtener de este DataSet
+
+- Patrones de reserva: Cómo, cuándo y dónde se solicitan los viajes
+- Rendimiento por tipo de vehículo: Comparativa entre diferentes categorías de autos
+- Ingresos y finanzas: Montos facturados por viaje
+- Comportamiento de cancelaciones: Viajes cancelados tanto por usuarios como por conductores
+- Satisfacción del cliente: Calificaciones y experiencias de los pasajeros
+
+### Variables de interés encontadas en el DataSet
+| Tipo de dato |	Ejemplos de columnas|
+|:------------|:--------------------|
+| Tiempo y ubicación	|Date, Time, Pickup Location, Drop Location|
+| Estado del viaje	|Booking Status (Completed, Cancelled, Incomplete, etc.)|
+| Vehículo	|Vehicle Type (Go Mini, Go Sedan, Auto, UberXL, etc.)
+| Financiero	|Booking Value, Payment Method (UPI, Cash, Credit Card, etc.)
+| Calidad	| Driver Ratings, Customer Rating
+| Cancelaciones	| Driver Cancellation Reason, Reason for cancelling by Customer |
+| Viajes incompletos	| Incomplete Rides Reason|
+
+## Diccionario de datos
+
+### Tipo de variables
+
+- **Numéricas continuas**: Son variables cuantitativas que pueden tomar infinitos valores dentro de un rango.
+- **Numéricas discretas**: Son variables numéricas que cuentan elementos. Sólo toman valores enteros.
+- **Categóricas nominales**: Representan categorías sin orden natural.
+- **Categóricas ordinales**: Son categorías con un orden implícito.
+- **Fecha/hora**: Representan momentos, intervalos o referencias cronológicas en el tiempo.
+
+| Columna | dtype | Representa | Tipo|
+|:------------|:------------|:---------|:------------|
+| Date | str | Fecha de la reserva | Fecha/hora |
+| Time | str | Hora de la reserva | Fecha/hora |
+| Booking ID | str | Identificador único para cada viaje | Categórica nominal |
+| Booking Status | str | Estado de la reserva (Completed, Cancelled by Customer, Cancelled by Driver, etc.) | Categórica nominal |
+| Customer ID | str | Identificador único del cliente | Categórica nominal |
+| Vehicle Type | str | Tipo de vehículo (Go Mini, Go Sedan, Auto, eBike/Bike, UberXL, Premier Sedan) | Categórica nominal |
+| Pickup Location | str | Lugar donde inicia el viaje | Categórica nominal |
+| Drop Location | str | Lugar donde finaliza el viaje | Categórica nominal |
+| Avg VTAT | float64 | Tiempo promedio en minutos que tarda el conductor en llegar al punto de inicio | Numérica continua |
+| Avg CTAT | float64 | Tiempo promedio en minutos que tarda el viaje desde donde inició hasta donde terminó | Numérica continua |
+| Cancelled Rides by Customer | float64 | Marca si el cliente canceló el viaje | Booleana |
+| Reason for cancelling by Customer | str | Motivo por el cual el cliente canceló el viaje | Categórica nominal |
+| Cancelled Rides by Driver | float64 | Marca si el conductor canceló el viaje | Booleana |
+| Driver Cancellation Reason | str | Motivo por el cual el conductor canceló el viaje | Categórica nominal |
+| Incomplete Rides | float64 | Marca si el viaje se interrumpió | Boolean |
+| Incomplete Rides Reason | str | Motivo por el cual el viaje se interrumpió | Categórica nominal |
+| Booking Value | float64 | Importe del viaje | Numérica continua |
+| Ride Distance | float64 | Distancia del viaje en Km | Numérica continua|
+| Driver Ratings | float64 | Puntuación dada por el cliente al conductor (1-5 con decimales) | Categórica Ordinal |
+| Customer Rating | float64 | Puntuación dada por el conductor al cliente (1-5 con decimales) | Categórica Ordinal |
+| Payment Method | str | Método de pago usado para el viaje | Categórica nominal | 
+
+
+
+
+### --
+Method used for payment (UPI, Cash, Credit Card, Uber Wallet, Debit Card) |
+
+
+
+ 18  Driver Ratings                     93000 non-null   float64
+ 19  Customer Rating                    93000 non-null   float64
+ 20  Payment Method                     102000 non-null  str    
+
 
 ### Metodología aplicada
 lorem ipsum
