@@ -14,17 +14,17 @@ Proyecto: Trabajo Práctico #1
 Carrera: Diplomatura en IA
 Año: 2026
 Universidad: Universidad de Palermo
-Autor: Matias Obregon
+Autor: Matías Obregón
 ```
 
-## Objetivo
+# Objetivo
 El objetivo del presente trabajo es el de desarrollar un análisis exploratorio de datos (EDA) a partir de un dataset de libre elección.
 Se espera que, mediante el tratamiento, limpieza y visualización de los datos, se puedan responder un conjunto de hipótesis previamente definidas y extraer conclusiones relevantes.
 
-## Acerca del Dataset
+# Acerca del Dataset
 Nombre del Dataset: Uber Ride Analytics Dataset 2024
 
-### Contexto
+## Contexto
 Este dataset contiene información detallada de operaciones de Uber durante el año 2024.
 
 Incluye datos como:
@@ -35,7 +35,7 @@ Incluye datos como:
 - Valoraciones del conductor y del pasajero
 - Valor del viaje
 
-### Información que puede ser interesante obtener de este DataSet
+## Información que puede ser interesante obtener de este DataSet
 
 - Patrones de reserva: Cómo, cuándo y dónde se solicitan los viajes
 - Rendimiento por tipo de vehículo: Comparativa entre diferentes categorías de autos
@@ -43,7 +43,7 @@ Incluye datos como:
 - Comportamiento de cancelaciones: Viajes cancelados tanto por usuarios como por conductores
 - Satisfacción del cliente: Calificaciones y experiencias de los pasajeros
 
-### Variables de interés encontadas en el DataSet
+## Variables de interés encontadas en el DataSet
 | Tipo de dato |	Ejemplos de columnas|
 |:------------|:--------------------|
 | Tiempo y ubicación	|Date, Time, Pickup Location, Drop Location|
@@ -54,9 +54,9 @@ Incluye datos como:
 | Cancelaciones	| Driver Cancellation Reason, Reason for cancelling by Customer |
 | Viajes incompletos	| Incomplete Rides Reason|
 
-## Diccionario de datos
+# Diccionario de datos
 
-### Tipo de variables
+## Tipo de variables
 
 - **Numéricas continuas**: Son variables cuantitativas que pueden tomar infinitos valores dentro de un rango.
 - **Numéricas discretas**: Son variables numéricas que cuentan elementos. Sólo toman valores enteros.
@@ -89,25 +89,13 @@ Incluye datos como:
 | Payment Method | str | Método de pago usado para el viaje | Categórica nominal | 
 
 
-
-
-### --
-Method used for payment (UPI, Cash, Credit Card, Uber Wallet, Debit Card) |
-
-
-
- 18  Driver Ratings                     93000 non-null   float64
- 19  Customer Rating                    93000 non-null   float64
- 20  Payment Method                     102000 non-null  str    
-
-
-### Metodología aplicada
+## Metodología aplicada
 lorem ipsum
 
-### Conclusiones y hallazgos relevantes
+## Conclusiones y hallazgos relevantes
 lorem ipsum
 
-## Requisitos Previos
+# Requisitos Previos
 
 
 
