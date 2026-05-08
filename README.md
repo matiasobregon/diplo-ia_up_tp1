@@ -35,14 +35,6 @@ Incluye datos como:
 - Valoraciones del conductor y del pasajero
 - Valor del viaje
 
-## Información que puede ser interesante obtener de este DataSet
-
-- Patrones de reserva: Cómo, cuándo y dónde se solicitan los viajes
-- Rendimiento por tipo de vehículo: Comparativa entre diferentes categorías de autos
-- Ingresos y finanzas: Montos facturados por viaje
-- Comportamiento de cancelaciones: Viajes cancelados tanto por usuarios como por conductores
-- Satisfacción del cliente: Calificaciones y experiencias de los pasajeros
-
 ## Variables de interés encontadas en el DataSet
 | Tipo de dato |	Ejemplos de columnas|
 |:------------|:--------------------|
@@ -88,6 +80,26 @@ Incluye datos como:
 | Customer Rating | float64 | Puntuación dada por el conductor al cliente (1-5 con decimales) | Categórica Ordinal |
 | Payment Method | str | Método de pago usado para el viaje | Categórica nominal | 
 
+
+----
+Ideas y preguntas de análisis sobre el dataset
+- ¿Cómo varía la demanda de viajes según el horario del día?
+- ¿Existen horarios en los que se concentran más solicitudes de viajes?
+- ¿Qué diferencias pueden observarse entre los patrones de demanda de días hábiles y fines de semana?
+- ¿Existen zonas con una mayor concentración de solicitudes de viaje?
+- ¿Cómo se comportan los distintos tipos de vehículos en términos de ingresos generados?
+- ¿Qué tipos de vehículos presentan mayores tasas de cancelación?
+- ¿Existen diferencias en los tiempos de espera según el tipo de vehículo solicitado?
+- ¿Cómo se distribuyen los montos facturados por viaje?
+- ¿Qué relación existe entre la distancia recorrida y el valor del viaje?
+- ¿Existen franjas horarias con mayor facturación total?
+- ¿Cómo varían las cancelaciones según el horario y el nivel de demanda?
+- ¿Cuáles son las razones de cancelación más frecuentes registradas en el dataset?
+- ¿Qué tipos de vehículos presentan mayores cancelaciones por parte de los conductores?
+- ¿Qué relación existe entre el tiempo de espera y la calificación otorgada por los clientes?
+- ¿Cómo impactan las cancelaciones o incidencias en las valoraciones de los usuarios?
+- ¿Existen diferencias en las calificaciones promedio según el tipo de vehículo utilizado?
+----
 
 ## Metodología aplicada
 lorem ipsum
