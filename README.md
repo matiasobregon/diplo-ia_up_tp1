@@ -22,7 +22,8 @@ El objetivo del presente trabajo es el de desarrollar un análisis exploratorio 
 Se espera que, mediante el tratamiento, limpieza y visualización de los datos, se puedan responder un conjunto de hipótesis previamente definidas y extraer conclusiones relevantes.
 
 # Acerca del Dataset
-Nombre del Dataset: Uber Ride Analytics Dataset 2024
+> "The largest public dataset of 90 000+ games published on Steam" | Dataset de juegos publicados en la tienda de Steam
+> Fuente: [https://www.kaggle.com/datasets/artermiloff/steam-games-dataset/data]
 
 ## Contexto
 Este dataset contiene información detallada de operaciones de Uber durante el año 2024.
