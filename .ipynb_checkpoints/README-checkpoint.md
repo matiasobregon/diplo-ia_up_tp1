@@ -87,7 +87,7 @@ Incluye datos como:
 ## Metodología aplicada
 lorem ipsum
 
-## Conclusiones y hallazgos relevantes
+## Preguntas sobre el dataset
 
 Este dataset da lugar a hacerse algunas preguntas:
 
@@ -103,6 +103,8 @@ Este dataset da lugar a hacerse algunas preguntas:
 10. ¿Hay franjas horarias más asociadas al uso de armas?
 
 *lorem ipsum*
+
+## Conclusiones y hallazgos relevantes
 
 # Requisitos Previos
 
