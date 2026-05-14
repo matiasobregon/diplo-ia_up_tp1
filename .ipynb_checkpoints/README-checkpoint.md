@@ -106,11 +106,11 @@ Para ejecutar este cuaderno sin inconvenientes, necesitarás:
 ### Estructura del Proyecto
 ```text
 /
-├── tp1_desarrollo.ipynb    # Cuaderno principal
-├── data/                   # Repositorio de datos
-|   └───delitos_2024.csv    # Archivo de datos CSV
-├── LICENSE                 # Archivo de licencia
-└── README.md               # Este archivo
+|   LICENSE                 # Archivo de licencia
+|   README.md               # Este archivo
+|   tp1_desarrollo.ipynb    # Cuaderno principal
+\---data
+    \---delitos_2024.csv    # Archivo de datos CSV
 ```
 
 
