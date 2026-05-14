@@ -84,13 +84,25 @@ Incluye datos como:
 | cantidad       | number    | Numérica discreta  | Número de eventos registrados en esa ubicación y fecha |
 
 
-
-
 ## Metodología aplicada
 lorem ipsum
 
 ## Conclusiones y hallazgos relevantes
-lorem ipsum
+
+Este dataset da lugar a hacerse algunas preguntas:
+
+1. ¿Cómo se distribuyen los delitos según la franja horaria?
+2. ¿Qué tipos de delitos son los más frecuentes?
+3. ¿Existen diferencias entre comunas respecto a la cantidad de delitos?
+4. ¿El uso de armas está asociado a determinados tipos de delitos?
+5. ¿El uso de motos aparece con mayor frecuencia en ciertos delitos?
+6. ¿Hay días de la semana con mayor actividad delictiva?
+7. ¿Existen patrones mensuales o estacionales?
+8. ¿Qué barrios concentran más delitos?
+9. ¿La distribución geográfica de delitos es uniforme?
+10. ¿Hay franjas horarias más asociadas al uso de armas?
+
+*lorem ipsum*
 
 # Requisitos Previos
 
