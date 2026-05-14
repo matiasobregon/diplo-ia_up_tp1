@@ -107,7 +107,8 @@ Para ejecutar este cuaderno sin inconvenientes, necesitarás:
 ```text
 /
 ├── tp1_desarrollo.ipynb    # Cuaderno principal
-├── data/                   # Datos utilizados
+├── data/                   # Repositorio de datos
+|   └───delitos_2024.csv    # Archivo de datos CSV
 ├── LICENSE                 # Archivo de licencia
 └── README.md               # Este archivo
 ```
