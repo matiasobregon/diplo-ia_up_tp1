@@ -106,10 +106,10 @@ Para ejecutar este cuaderno sin inconvenientes, necesitarás:
 ### Estructura del Proyecto
 ```text
 /
-├── tp1.ipynb    # Cuaderno principal
-├── data/        # (Opcional) Datos utilizados
-├── LICENSE      # Archivo de licencia
-└── README.md    # Este archivo
+├── tp1_desarrollo.ipynb    # Cuaderno principal
+├── data/                   # Datos utilizados
+├── LICENSE                 # Archivo de licencia
+└── README.md               # Este archivo
 ```
 
 
