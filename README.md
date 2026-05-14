@@ -22,30 +22,37 @@ El objetivo del presente trabajo es el de desarrollar un análisis exploratorio 
 Se espera que, mediante el tratamiento, limpieza y visualización de los datos, se puedan responder un conjunto de hipótesis previamente definidas y extraer conclusiones relevantes.
 
 # Acerca del Dataset
-> "The largest public dataset of 90 000+ games published on Steam" | Dataset de juegos publicados en la tienda de Steam
-> Fuente: [https://www.kaggle.com/datasets/artermiloff/steam-games-dataset/data]
+> 2024 Delitos CABA
+> Fuente: [https://data.buenosaires.gob.ar/dataset/delitos/resource/49f58c2e-21d7-4766-84e0-4bb753d28478]
 
 ## Contexto
-Este dataset contiene información detallada de operaciones de Uber durante el año 2024.
+Este DataSet contiene fecha, hora y ubicación de los homicidios, hurtos (sin violencia), lesiones y robos (con violencia) que ocurrieron en el ámbito de la Ciudad de Buenos Aires durante el año 2024.
 
 Incluye datos como:
 
-- Fecha y Hora de cada reserva
-- Estado del viaje (realizado, cancelado, interrumpuido)
-- Tipo de vehículo que hizo el viaje
-- Valoraciones del conductor y del pasajero
-- Valor del viaje
+- Fecha del evento
+- Tipo de delito
+- Subtipo de delito
+- Ubicación
+- Barrio/Comuna
 
 ## Variables de interés encontadas en el DataSet
-| Tipo de dato |	Ejemplos de columnas|
-|:------------|:--------------------|
-| Tiempo y ubicación	|Date, Time, Pickup Location, Drop Location|
-| Estado del viaje	|Booking Status (Completed, Cancelled, Incomplete, etc.)|
-| Vehículo	|Vehicle Type (Go Mini, Go Sedan, Auto, UberXL, etc.)
-| Financiero	|Booking Value, Payment Method (UPI, Cash, Credit Card, etc.)
-| Calidad	| Driver Ratings, Customer Rating
-| Cancelaciones	| Driver Cancellation Reason, Reason for cancelling by Customer |
-| Viajes incompletos	| Incomplete Rides Reason|
+
+| Variable                     | Por qué es relevante                                                                              |
+| ---------------------------- | ------------------------------------------------------------------------------------------------- |
+| `tipo` / `tipo_delito`       | Es probablemente la variable criminal principal. Permite analizar distribución delictiva general. |
+| `subtipo` / `subtipo_delito` | Agrega granularidad al análisis                                                                   |
+| `franja` / `franja_horaria`  | Para análisis temporal. Posibilita estudiar horarios críticos.                                    |
+| `fecha`                      | Permite análisis cronológico, tendencias y estacionalidad.                                        |
+| `dia`                        | Útil para comparar comportamiento entre días hábiles y fines de semana.                           |
+| `mes`                        | Permite detectar variaciones mensuales o estacionales.                                            |
+| `barrio`                     | Variable geográfica clave para concentración delictiva.                                           |
+| `comuna`                     | Similar a barrio, pero más agregada y útil para análisis comparativos.                            |
+| `uso_arma`                   | Relevante para caracterizar gravedad/modalidad de delitos.                                        |
+| `uso_moto`                   | Potencialmente relevante si hay delitos asociados a uso de motocicletas.                          |
+| `cantidad`                   | Es la métrica cuantitativa principal del dataset.                                                 |
+| `latitud` / `longitud`       | Habilitan análisis espacial y mapas (según calidad de la informacíón).                            |
+
 
 # Diccionario de datos
 
@@ -57,50 +64,26 @@ Incluye datos como:
 - **Categóricas ordinales**: Son categorías con un orden implícito.
 - **Fecha/hora**: Representan momentos, intervalos o referencias cronológicas en el tiempo.
 
-| Columna | dtype | Representa | Tipo|
-|:------------|:------------|:---------|:------------|
-| Date | str | Fecha de la reserva | Fecha/hora |
-| Time | str | Hora de la reserva | Fecha/hora |
-| Booking ID | str | Identificador único para cada viaje | Categórica nominal |
-| Booking Status | str | Estado de la reserva (Completed, Cancelled by Customer, Cancelled by Driver, etc.) | Categórica nominal |
-| Customer ID | str | Identificador único del cliente | Categórica nominal |
-| Vehicle Type | str | Tipo de vehículo (Go Mini, Go Sedan, Auto, eBike/Bike, UberXL, Premier Sedan) | Categórica nominal |
-| Pickup Location | str | Lugar donde inicia el viaje | Categórica nominal |
-| Drop Location | str | Lugar donde finaliza el viaje | Categórica nominal |
-| Avg VTAT | float64 | Tiempo promedio en minutos que tarda el conductor en llegar al punto de inicio | Numérica continua |
-| Avg CTAT | float64 | Tiempo promedio en minutos que tarda el viaje desde donde inició hasta donde terminó | Numérica continua |
-| Cancelled Rides by Customer | float64 | Marca si el cliente canceló el viaje | Booleana |
-| Reason for cancelling by Customer | str | Motivo por el cual el cliente canceló el viaje | Categórica nominal |
-| Cancelled Rides by Driver | float64 | Marca si el conductor canceló el viaje | Booleana |
-| Driver Cancellation Reason | str | Motivo por el cual el conductor canceló el viaje | Categórica nominal |
-| Incomplete Rides | float64 | Marca si el viaje se interrumpió | Boolean |
-| Incomplete Rides Reason | str | Motivo por el cual el viaje se interrumpió | Categórica nominal |
-| Booking Value | float64 | Importe del viaje | Numérica continua |
-| Ride Distance | float64 | Distancia del viaje en Km | Numérica continua|
-| Driver Ratings | float64 | Puntuación dada por el cliente al conductor (1-5 con decimales) | Categórica Ordinal |
-| Customer Rating | float64 | Puntuación dada por el conductor al cliente (1-5 con decimales) | Categórica Ordinal |
-| Payment Method | str | Método de pago usado para el viaje | Categórica nominal | 
+| Nombre         | Tipo      | Tipo estadístico   | Descripción                                            |
+| -------------- | --------- | ------------------ | ------------------------------------------------------ |
+| id-mapa        | integer   | Numérica discreta  | Identificador único                                    |
+| Año            | integer   | Numérica discreta  | Año en el que se registró el evento                    |
+| Mes            | string    | Categórica ordinal | Mes en que ocurrió el evento                           |
+| Dia            | string    | Categórica ordinal | Día de la semana en que ocurrió el evento              |
+| Fecha          | date      | Fecha/hora         | Fecha exacta del evento                                |
+| franja_horaria | integer   | Categórica ordinal | Franja horaria en la que ocurrió el evento             |
+| tipo_delito    | string    | Categórica nominal | Clasificación del tipo de delito                       |
+| subtipo_delito | string    | Categórica nominal | Subtipo del delito, más específico                     |
+| uso_arma       | string    | Categórica nominal | Indicador de uso de arma (SI/NO)                       |
+| uso_moto       | string    | Categórica nominal | Indicador de uso de moto en el evento (SI/NO)          |
+| barrio         | string    | Categórica nominal | Barrio donde ocurrió el evento                         |
+| comuna         | number    | Numérica discreta  | Comuna donde ocurrió el evento                         |
+| lat            | geo_point | Numérica continua  | Latitud geográfica donde ocurrió el evento             |
+| long           | geo_point | Numérica continua  | Longitud geográfica donde ocurrió el evento            |
+| cantidad       | number    | Numérica discreta  | Número de eventos registrados en esa ubicación y fecha |
 
 
-----
-Ideas y preguntas de análisis sobre el dataset
-- ¿Cómo varía la demanda de viajes según el horario del día?
-- ¿Existen horarios en los que se concentran más solicitudes de viajes?
-- ¿Qué diferencias pueden observarse entre los patrones de demanda de días hábiles y fines de semana?
-- ¿Existen zonas con una mayor concentración de solicitudes de viaje?
-- ¿Cómo se comportan los distintos tipos de vehículos en términos de ingresos generados?
-- ¿Qué tipos de vehículos presentan mayores tasas de cancelación?
-- ¿Existen diferencias en los tiempos de espera según el tipo de vehículo solicitado?
-- ¿Cómo se distribuyen los montos facturados por viaje?
-- ¿Qué relación existe entre la distancia recorrida y el valor del viaje?
-- ¿Existen franjas horarias con mayor facturación total?
-- ¿Cómo varían las cancelaciones según el horario y el nivel de demanda?
-- ¿Cuáles son las razones de cancelación más frecuentes registradas en el dataset?
-- ¿Qué tipos de vehículos presentan mayores cancelaciones por parte de los conductores?
-- ¿Qué relación existe entre el tiempo de espera y la calificación otorgada por los clientes?
-- ¿Cómo impactan las cancelaciones o incidencias en las valoraciones de los usuarios?
-- ¿Existen diferencias en las calificaciones promedio según el tipo de vehículo utilizado?
-----
+
 
 ## Metodología aplicada
 lorem ipsum
